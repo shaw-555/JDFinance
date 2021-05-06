@@ -1,18 +1,18 @@
 <template lang="html">
-    <div :class="$style.header">
-        <span :class="$style.left">
-            <em>注册</em>&nbsp;|&nbsp;<em>登录</em>
-        </span>
-        <btn :class="$style.btnDownload">APP下载</btn>
-    </div>
+  <div :class="$style.header">
+    <span :class="$style.left">
+      <em>注册</em>&nbsp;|&nbsp;<em>登录</em>
+    </span>
+    <btn :class="$style.btnDownload">APP下载</btn>
+  </div>
 </template>
 
 <script>
-import btn from "../core/btn.vue"
+import btn from '../core/btn.vue'
 export default {
-    components: {
-        btn,
-    },
+  components: {
+    btn
+  }
 }
 </script>
 
