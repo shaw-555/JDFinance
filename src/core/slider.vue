@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { swiper, swiperSlide } from "vue-awesome-swiper"
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
     components: {
         swiper,
@@ -47,5 +47,5 @@ export default {
 </script>
 
 <style lang="css">
-  @import "~swiper/dist/css/swiper.css";
+
 </style>

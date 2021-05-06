@@ -6,6 +6,7 @@
 
 <script>
 export default {
+    name: 'btn',
     props: {
         cname: {
             type: String,
@@ -21,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../css/element.scss";
+@import "../../assets/styles/element.scss";
 .btn{
   @include btn;
 }
