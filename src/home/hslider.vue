@@ -1,15 +1,15 @@
 <template>
   <div>
-    <article class>
-      <Slider :items="items" :cname="$style.slider" />
-      <section :class="$style.list">
-        <div :class="$style.item" v-for="item in enters" :key="item.img">
-          <router-link :to="{ name: item.href }">
-            <img :src="item.img" alt="item.title" />
-            <h4>{{ item.title }}</h4>
-          </router-link>
-        </div>
-      </section>
+    <article class="">
+      <Slider :items="items" :cname="slider"/>
+        <section class="list">
+          <div class="item" v-for="item in enters" :key="item.img">
+            <router-link :to="{ name: item.href}">
+              <img :src="item.img" :alt="item.title">
+              <h4>{{ item.title }}</h4>
+            </router-link>
+          </div>
+        </section>
     </article>
   </div>
 </template>
@@ -77,32 +77,36 @@ export default {
 }
 </script>
 
-<style lang="scss" module>
+<style lang="scss" modules>
 @import "../assets/styles/element.scss";
-.slider {
-  margin-top: 120px;
-}
-.list {
-  @include list(row);
-  background: #fff;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  justify-content: space-around;
-  a {
-    text-decoration: none;
-  }
-  .item {
-    text-align: center;
-    img {
-      display: inline-block;
-      width: 90px;
-      height: 90px;
-    }
-    h4 {
-      font-size: 26px;
-      margin-top: 12px;
-      color: #666;
+  .slider{
+    margin: auto;
+    margin-top: 120px;
+    img{
+      width: 100%;
     }
   }
-}
+  .list{
+    @include list(row);
+    background: #fff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    a{
+      text-decoration: none;
+    }
+    .item{
+      text-align: center;
+      img{
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+      }
+      h4{
+        font-size: 26px;
+        margin-top: 12px;
+        color: #666;
+      }
+    }
+  }
 </style>

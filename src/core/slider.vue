@@ -47,4 +47,5 @@ export default {
 </script>
 
 <style lang="css">
+  @import '/Users/shaw/Desktop/JDFinance/JDFinance/node_modules/swiper/dist/css/swiper.css';
 </style>

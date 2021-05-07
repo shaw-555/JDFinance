@@ -1,9 +1,9 @@
 <template lang="html">
-  <div :class="$style.header">
-    <span :class="$style.left">
+  <div class="header">
+    <span class="left">
       <em>注册</em>&nbsp;|&nbsp;<em>登录</em>
     </span>
-    <btn :class="$style.btnDownload">APP下载</btn>
+    <btn class="btnDownload">APP下载</btn>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style lang="scss" module>
+<style lang="scss">
   .header{
     color: #666;
     height: 100px;
