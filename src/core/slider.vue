@@ -27,8 +27,10 @@ export default {
       type: Object,
       default () {
         return {
-          autoplay: true,
-          loop: true,
+          loop: false,
+          autoplay: {
+            delay: 3000
+          },
           pagination: {
             el: '.swiper-pagination'
           },

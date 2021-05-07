@@ -1,7 +1,7 @@
 <template>
   <div>
-    <article class="">
-      <Slider :items="items" :cname="slider"/>
+    <article class="article-wrapper">
+      <Slider :items="items" :cname="slider" :options="{autoplay:3000}"/>
         <section class="list">
           <div class="item" v-for="item in enters" :key="item.img">
             <router-link :to="{ name: item.href}">
@@ -79,33 +79,35 @@ export default {
 
 <style lang="scss" modules>
 @import "../assets/styles/element.scss";
-  .slider{
-    margin: auto;
-    margin-top: 120px;
-    img{
-      width: 100%;
-    }
-  }
-  .list{
-    @include list(row);
-    background: #fff;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    justify-content: space-around;
-    a{
-      text-decoration: none;
-    }
-    .item{
-      text-align: center;
+  .article-wrapper{
+    margin: 100px;
+    .slider{
+      padding-top: 120px;
       img{
-        display: inline-block;
-        width: 90px;
-        height: 90px;
+        width: 1000px;
       }
-      h4{
-        font-size: 26px;
-        margin-top: 12px;
-        color: #666;
+    }
+    .list{
+      @include list(row);
+      background: #fff;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      justify-content: space-around;
+      a{
+        text-decoration: none;
+      }
+      .item{
+        text-align: center;
+        img{
+          display: inline-block;
+          width: 90px;
+          height: 90px;
+        }
+        h4{
+          font-size: 26px;
+          margin-top: 12px;
+          color: #666;
+        }
       }
     }
   }
