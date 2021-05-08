@@ -41,18 +41,19 @@ export default {
   @import "../assets/styles/element.scss";
   .panel{
     @include panel;
-    >h4{
-      border-bottom: 1px solid #f00;
-    }
+    height: 150px;
+    border-bottom: 1px solid #f00;
   }
   .content{
     @include list(row);
+    background-color: #fff;
     .item {
       width: 50%;
       box-sizing: border-box;
       &:first-child{
         padding: 32px 20px;
         text-align: center;
+        border-right: 1px solid #ddd;
         img {
           width: 264px;
           height: 264px;
@@ -60,14 +61,23 @@ export default {
         }
       }
       h4{
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 50px;
+        line-height: 50px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
       .red {
         color: #f00;
+        font-size: 50px;
       }
       .gray {
+        margin-top: 50px;
         color: #999;
+        font-size: 36px;
+      }
+      p {
+        margin-top: 12px;
         font-size: 40px;
       }
       ul {
@@ -76,6 +86,14 @@ export default {
           height: 288px;
           width: 80%;
           padding: 32px 28px;
+          &:first-child{
+            border-bottom: 1px solid #ddd;
+          }
+          h4 {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
           img {
             width: 80px;
             height: 80px;
