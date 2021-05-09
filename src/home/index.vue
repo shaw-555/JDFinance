@@ -4,6 +4,7 @@
     <hslider/>
     <novice/>
     <borrow/>
+    <money/>
   </div>
 </template>
 
@@ -12,6 +13,8 @@ import heador from '../public/heador'
 import hslider from './hslider.vue'
 import novice from './novice.vue'
 import borrow from './borrow.vue'
+import money from './money.vue'
+import product from './product.vue'
 
 export default {
   name: 'Home',
@@ -19,7 +22,9 @@ export default {
     heador,
     hslider,
     novice,
-    borrow
+    borrow,
+    money,
+    product
   }
 }
 </script>
