@@ -11,6 +11,7 @@
 <script>
 import panel from '../core/panel.vue'
 export default {
+  name: 'HomeBorrow',
   components: {
     panel
   }

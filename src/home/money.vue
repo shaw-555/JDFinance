@@ -16,6 +16,7 @@
 import panel from '../core/panel.vue'
 
 export default {
+  name: 'HomeMoney',
   data () {
     return {
       items: [{

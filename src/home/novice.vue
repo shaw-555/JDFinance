@@ -28,6 +28,7 @@
 <script>
 import panel from '../core/panel.vue'
 export default {
+  name: 'HomeNovice',
   components: {
     panel
   },

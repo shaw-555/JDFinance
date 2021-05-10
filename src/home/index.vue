@@ -2,30 +2,33 @@
   <div>
     <heador/>
     <hslider/>
-    <novice/>
-    <borrow/>
-    <money/>
+    <HomeNovice/>
+    <HomeBorrow/>
+    <HomeMoney/>
     <HomeRroduct/>
+    <home-life/>
   </div>
 </template>
 
 <script>
 import heador from '../public/heador'
 import hslider from './hslider.vue'
-import novice from './novice.vue'
-import borrow from './borrow.vue'
-import money from './money.vue'
+import HomeNovice from './novice.vue'
+import HomeBorrow from './borrow.vue'
+import HomeMoney from './money.vue'
 import HomeRroduct from './product.vue'
+import HomeLife from './life.vue'
 
 export default {
   name: 'Home',
   components: {
     heador,
     hslider,
-    novice,
-    borrow,
-    money,
-    HomeRroduct
+    HomeNovice,
+    HomeBorrow,
+    HomeMoney,
+    HomeRroduct,
+    HomeLife
   }
 }
 </script>
