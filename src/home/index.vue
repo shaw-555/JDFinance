@@ -5,6 +5,7 @@
     <novice/>
     <borrow/>
     <money/>
+    <HomeRroduct/>
   </div>
 </template>
 
@@ -14,7 +15,7 @@ import hslider from './hslider.vue'
 import novice from './novice.vue'
 import borrow from './borrow.vue'
 import money from './money.vue'
-import product from './product.vue'
+import HomeRroduct from './product.vue'
 
 export default {
   name: 'Home',
@@ -24,7 +25,7 @@ export default {
     novice,
     borrow,
     money,
-    product
+    HomeRroduct
   }
 }
 </script>
