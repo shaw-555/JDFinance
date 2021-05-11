@@ -7,6 +7,8 @@
     <HomeMoney/>
     <HomeRroduct/>
     <home-life/>
+    <HomeFooter/>
+    <footer/>
   </div>
 </template>
 
@@ -18,6 +20,8 @@ import HomeBorrow from './borrow.vue'
 import HomeMoney from './money.vue'
 import HomeRroduct from './product.vue'
 import HomeLife from './life.vue'
+import HomeFooter from './footer.vue'
+import footer from '../public/footer'
 
 export default {
   name: 'Home',
@@ -28,7 +32,9 @@ export default {
     HomeBorrow,
     HomeMoney,
     HomeRroduct,
-    HomeLife
+    HomeLife,
+    HomeFooter,
+    footer
   }
 }
 </script>
