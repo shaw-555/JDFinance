@@ -8,7 +8,7 @@
     <HomeRroduct/>
     <home-life/>
     <HomeFooter/>
-    <footer/>
+    <navbar/>
   </div>
 </template>
 
@@ -21,7 +21,7 @@ import HomeMoney from './money.vue'
 import HomeRroduct from './product.vue'
 import HomeLife from './life.vue'
 import HomeFooter from './footer.vue'
-import footer from '../public/footer'
+import navbar from '../public/navbar'
 
 export default {
   name: 'Home',
@@ -34,7 +34,7 @@ export default {
     HomeRroduct,
     HomeLife,
     HomeFooter,
-    footer
+    navbar
   }
 }
 </script>
