@@ -24,7 +24,7 @@ import HomeFooter from './footer.vue'
 import navbar from '../public/navbar'
 
 export default {
-  name: 'Home',
+  name: 'TheHome',
   components: {
     heador,
     hslider,

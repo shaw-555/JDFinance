@@ -80,11 +80,14 @@ export default {
 <style lang="scss" modules>
 @import "../assets/styles/element.scss";
   .article-wrapper{
-    margin: 100px;
+    margin-top: 100px;
+    width: 100%;
     .slider{
       padding-top: 120px;
+      position: relative;
+      left: 0;
       img{
-        width: 1000px;
+        width: 980px;
       }
     }
     .list{
