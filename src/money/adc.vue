@@ -20,6 +20,7 @@ export default {
   @import '../assets/styles/element.scss';
   .panel {
     @include panel;
+    margin-bottom: 0;
     >h4 {
       display: none;
     }
