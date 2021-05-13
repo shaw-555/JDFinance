@@ -1,5 +1,5 @@
 <template>
-  <panel title="理财精选">
+  <panel title="白条福利" :class="$style.panel">
     <section :class="$style.content">
       <div class="item">
         <img src="//img12.360buyimg.com/jrpmobile/jfs/t3670/58/543125556/2606/a65096b9/580d80afN63b1085a.png?width=76&height=76" alt="">
@@ -45,6 +45,41 @@ export default {
     @include panel;
     >h4{
       border-bottom: 1px solid #ddd;
+    }
+    .content {
+      @include flex(row);
+      justify-content: space-around;
+      box-sizing: border-box;
+      &:after{
+        content: " ";
+        display: block;
+        width: 150%;
+        height: 0px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        top: -208px;
+      }
+      .item{
+        position: relative;
+        width: 0%;
+        box-sizing: border-box;
+        display: flex;
+        img {
+          float: left;
+        }
+        &:after{
+          content: " ";
+          width: 1px;
+          height: 136px;
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          margin-top: -68px;
+          border-right: 1px solid #eee;
+        }
+      }
     }
   }
 </style>

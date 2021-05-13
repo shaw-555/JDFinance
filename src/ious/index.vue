@@ -3,6 +3,7 @@
     <heador/>
     <ious-slider/>
     <ious-welfare/>
+    <ious-service/>
     <ious-footer/>
     <navbar/>
   </div>
@@ -14,6 +15,7 @@ import navbar from '../public/navbar'
 import IousFooter from './footer.vue'
 import IousSlider from './Islider.vue'
 import IousWelfare from './welfare.vue'
+import IousService from './service.vue'
 
 export default {
   name: 'Ious',
@@ -22,7 +24,8 @@ export default {
     navbar,
     IousFooter,
     IousSlider,
-    IousWelfare
+    IousWelfare,
+    IousService
   }
 }
 </script>
