@@ -35,6 +35,7 @@ export default {
 
   .panel {
     @include panel;
+    margin-top: 120px;
     >h4 {
       display: none;
     }

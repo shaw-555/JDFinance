@@ -3,6 +3,7 @@
     <heador/>
     <rise-slider/>
     <rise-daily/>
+    <rise-in/>
     <rise-more/>
     <rise-footer cname="mfooter"/>
     <navbar/>
@@ -16,6 +17,7 @@ import RiseFooter from './footer.vue'
 import RiseSlider from './rslider.vue'
 import RiseDaily from './daily.vue'
 import RiseMore from './more.vue'
+import RiseIn from './in.vue'
 
 export default {
   name: 'Rise',
@@ -25,7 +27,8 @@ export default {
     RiseFooter,
     RiseSlider,
     RiseDaily,
-    RiseMore
+    RiseMore,
+    RiseIn
   }
 }
 </script>
