@@ -5,9 +5,15 @@
         <img :src="item.catory" alt="">
         <div v-for="obj in item.list" :key="obj.img" :class="$style.list">
           <img :src="obj.img" alt=""/>
-          <div :class="$style.font">{{obj.title}}</div>
-          <div :class="$style.font">{{obj.price}}</div>
-          <div :class="$style.font">{{obj.progress}}</div>
+          <div :class="$style.title">{{obj.title}}</div>
+          <div :class="$style.price"><em>{{obj.price}}</em>起</div>
+          <article>
+            <div :class="$style.wrapper">
+                <div :class="$style.inner">
+                </div>
+                <p>{{obj.progress}}</p>
+            </div>
+          </article>
         </div>
       </ul>
     </section>
@@ -108,12 +114,48 @@ export default {
         display: inline-block;
         text-align: center;
         width: 50%;
+        box-sizing: border-box;
+        background-color: rgba(0,0,0, 0.02);
         img {
-          width: 200px;
           margin-top: 20px;
+          width: 208px;
+          height: 208px;
+          margin: 44px auto 20px
         }
-        .font {
-          font-size: 30px;
+        .title {
+          color: #444;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 40px;
+        }
+        .price {
+          em {
+            color:red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            &::before {
+              content:"￥";
+            }
+          }
+          color: #444;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 34px;
+        }
+        article {
+          @include flex(row);
+          background-color: #F6E6E6;
+          margin-top: 30px;
+          .wrapper{
+            width: 144px;
+            height: 10px;
+            background-color: red;
+          }
+          p {
+            height: 30px;
+            line-height: 30px;
+            font-size: 30px;
+            position: relative;
+            margin-right: -250px;
+          }
         }
       }
     }

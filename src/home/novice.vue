@@ -43,7 +43,6 @@ export default {
   .panel{
     @include panel;
     height: 150px;
-    border-bottom: 1px solid #f00;
   }
   .content{
     @include list(row);

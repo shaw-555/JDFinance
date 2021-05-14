@@ -16,6 +16,8 @@ export default {
     panel
   }
 }
+
+// borrow 组件，本质是就是panel内安插一个section元素，在section元素内再放一个布局为block的图片
 </script>
 
 <style lang="scss" module>
@@ -23,9 +25,12 @@ export default {
   .panel {
     @include panel;
     .content {
+      // 保持与页面底部的距离
       padding-bottom: 40px;
       img {
+        // 宽度撑开整个页面
         width: 100%;
+        // block布局以独占整个页面
         display: block;
       }
     }
