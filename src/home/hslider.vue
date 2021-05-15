@@ -25,7 +25,7 @@ export default {
     return {
       items: [
         {
-          href: 'home',
+          href: 'download',
           src:
             '//img12.360buyimg.com/jrpmobile/jfs/t13744/11/2508939408/43213/58bfe502/5a421ff3N52d0a474.jpg?width=750&height=320'
         },
@@ -48,7 +48,7 @@ export default {
           title: '优惠券'
         },
         {
-          href: 'home',
+          href: 'download',
           img:
             '//img12.360buyimg.com/jrpmobile/jfs/t5590/252/875247023/17343/946aa72c/59224650N0f7ffc92.png?width=132&height=132',
           title: '领红包'
