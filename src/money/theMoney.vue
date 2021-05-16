@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <panel title="理财产品" :class="$style.panel">
-      <section :class="$style.content">
-        <dl :class="$style.item" v-for="item in items" :key="item.title">
-          <dt>{{item.title}} <span>{{item.sub}}</span></dt>
-          <dd>{{item.rate}}</dd>
-          <dd>{{item.text}}</dd>
-        </dl>
-      </section>
-    </panel>
-  </div>
+  <panel title="理财产品" :class="$style.panel">
+    <section :class="$style.content">
+      <dl :class="$style.item" v-for="item in items" :key="item.title">
+        <dt>{{item.title}} <span>{{item.sub}}</span></dt>
+        <dd>{{item.rate}}</dd>
+        <dd>{{item.text}}</dd>
+      </dl>
+    </section>
+  </panel>
 </template>
 
 <script>
@@ -49,9 +47,10 @@ export default {
 </script>
 
 <style lang="scss" module>
-  @import '../assets/styles/element';
+  @import '../assets/styles/element.scss';
   .panel {
     @include panel;
+    margin-top: 120px;
     .content {
       @include flex(row);
       justify-content: space-around;
