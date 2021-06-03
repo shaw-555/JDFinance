@@ -57,6 +57,7 @@ export default {
         width: 100%;
         color: #999;
         font-size: 24px;
+        list-style: none;
         >img {
           width: 100%;
           height: 143px;

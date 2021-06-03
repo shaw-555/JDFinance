@@ -24,9 +24,11 @@ export default {
       display: none;
     }
     .content {
-      width: 100%;
-      height: 230px;
-      display: block;
+      img {
+        width: 100%;
+        height: 230px;
+        display: block;
+      }
     }
   }
 </style>

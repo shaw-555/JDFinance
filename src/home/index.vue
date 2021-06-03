@@ -9,6 +9,7 @@
     <home-life/>
     <HomeFooter/>
     <navbar/>
+    <test/>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import Homeproduct from './product.vue'
 import HomeLife from './life.vue'
 import HomeFooter from './footer.vue'
 import navbar from '../public/navbar'
+import Test from '../test/test.vue'
 
 export default {
   name: 'TheHome',
@@ -34,11 +36,12 @@ export default {
     Homeproduct,
     HomeLife,
     HomeFooter,
-    navbar
+    navbar,
+    Test
   }
 }
 </script>
 
-<style lang="scss">
-  @import '../assets/styles/reset.scss';
-</style>
+// <style lang="scss">
+//   @import '../assets/styles/reset.scss';
+// </style>

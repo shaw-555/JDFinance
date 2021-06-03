@@ -15,6 +15,7 @@
     "babel-polyfill": "^6.26.0",
     "better-scroll": "^2.3.0",
     "fastclick": "^1.0.6",
+    "node-sass": "^4.14.0",
     "npm": "^7.11.1",
     "sass-loader": "^7.3.1",
     "stylus": "^0.54.8",

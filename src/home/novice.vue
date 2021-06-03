@@ -1,7 +1,7 @@
 <template>
   <div>
     <panel title="新手特权" :class="$style.panel"/>
-      <section :class="$style.content">
+      <!-- <section :class="$style.content">
         <div   :class="$style.item">
           <h4>下载App <span :class="$style.red">送888元礼包</span></h4>
           <p :class="$style.gray">新手专享</p>
@@ -21,7 +21,18 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+    <section :class="$style.content">
+      <div :class="$style.item">
+        1
+      </div>
+      <div :class="$style.item">
+        <ul>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -31,9 +42,6 @@ export default {
   name: 'HomeNovice',
   components: {
     panel
-  },
-  mounted () {
-    console.log(this.$style)
   }
 }
 </script>

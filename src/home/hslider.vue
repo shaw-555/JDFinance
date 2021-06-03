@@ -3,7 +3,11 @@
     <article class="article-wrapper">
       <Slider :items="items" :cname="slider" :options="{autoplay:3000}"/>
         <section class="list">
-          <div class="item" v-for="item in enters" :key="item.img">
+          <div
+              class="item"
+              v-for="item in enters"
+              :key="item.img"
+          >
             <router-link :to="{ name: item.href}">
               <img :src="item.img" :alt="item.title">
               <h4>{{ item.title }}</h4>
